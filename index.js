@@ -167,8 +167,8 @@ class SuperGrid extends Component {
         data={rows}
         renderItem={this.renderRow}
         style={[
-          { ...horizontal ? { paddingLeft: spacing } : { paddingTop: spacing } },
- {scrollEnabled: false},
+          { ...(horizontal ? { paddingLeft: spacing } : { paddingTop: spacing }) },
+          { scrollEnabled: false },
           style,
         ]}
         onLayout={this.onLayout}
